@@ -67,13 +67,14 @@
 	<!-- Main Nav End -->
 
 <div class="container">
-			<form>
+			<form id="contact" method="post" action="">
 				<div class="row">
 					<div class="col-25">
 						<label for="fname">First Name</label>
 					</div>
 					<div class="col-75">
 						<input type="text" id="fname" name="firstname" placeholder="Your name...">
+						<span class="error">This field is required</span>
 					</div>
 				</div>
 
@@ -83,6 +84,7 @@
 					</div>
 					<div class="col-75">
 						<input type="text" id="lname" name="lastname" placeholder="Your last name...">
+						<span class="error">This field is required</span>
 					</div>
 				</div>
 
@@ -92,6 +94,7 @@
 					</div>
 					<div class="col-75">
 						<textarea id="message" name="message" placeholder="Your message here..." style="height:200px"></textarea>
+						<span class="error">This field is required</span>
 					</div>
 				</div>
 
@@ -99,6 +102,7 @@
 					<div>
 						<input type="radio" name="newsletter"> Would you like to subscribe to our monthly Newsletter <br>
 						<input type="radio" name="FAQ"> Have you checked our frequently asked questions to see if your question has already been answered? <br>
+						<span class="error">This field is required</span>
 					</div>
 				</div>
 
@@ -157,6 +161,6 @@
 	</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/validation.js"></script>
 </body>
 </html>
